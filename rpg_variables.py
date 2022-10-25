@@ -1,9 +1,9 @@
 my_hero = {
-    "name" : "",
+    "name" : "Goldie The Curious",
     "level" : 1,
-    "health" : 100,
-    "equipment" : {"",""},
-    "attacks" : (("",50), ("",100), ("",150)),
+    "health" : 150,
+    "equipment" : {"Leather Shoes","Big Hair Bow"},
+    "attacks" : (("Glaring Bow Distraction",50), ("Silent Sneak",100), ("Curiosity Gaze",150)),
     "coins" : {
         "copper" : 9,
         "silver" : 3,
@@ -12,11 +12,11 @@ my_hero = {
 }
 
 enemy_one = {
-    "name" : "",
+    "name" : "Babear The Young",
     "level" : 1,
     "health" : 100,
-    "equipment" : {"", ""},
-    "attacks" : (("",15), ("",65)("", 115)),
+    "equipment" : {"Hard Chair", "Warm Porridge"},
+    "attacks" : (("Light Growl",15), ("Small Paw Strike",65), ("Tiny Tooth Nip", 115)),
     "coins" : {
         "copper" : 12,
         "silver" : 6,
@@ -25,11 +25,11 @@ enemy_one = {
 }
 
 enemy_two = {
-    "name" : "",
+    "name" : "Pabear The Large",
     "level" : 2,
-    "health" : 1115,
-    "equipment" : {"", ""},
-    "attacks" : (("",30), ("",80), ("",130)),
+    "health" : 115,
+    "equipment" : {"Conforting Bed", "Hot Porridge"},
+    "attacks" : (("Warding Growl",30), ("Large Paw Strike",80), ("Menacing Teeth Bite",130)),
     "coins" : {
         "copper" : 15,
         "silver" : 9,
@@ -38,11 +38,11 @@ enemy_two = {
 }
 
 enemy_three = {
-    "name" : "",
+    "name" : "Mabear The Wise",
     "level" : 3,
-    "health" : 1115,
-    "equipment" : {"", ""},
-    "attacks" : (("",45), ("",95), ("",145)),
+    "health" : 130,
+    "equipment" : {"Comforting Chair", "Cold Porridge"},
+    "attacks" : (("Angry Roar",45), ("Paw Strike of Protection",95), ("Hug of Death",145)),
     "coins" : {
         "copper" : 18,
         "silver" : 12,
