@@ -1,13 +1,14 @@
+from rpg_characters import my_hero,enemy_one
+import rpg_functions
+from rpg_print_statements import introduction_sequence
+from colorama import Fore, init
+init ()
+# intro = rpg_functions.story(introduction_sequence)
 
-from rpg_functions import hero_vs_enemy_battle, slow_print
-from rpg_variables import my_hero, enemy_one, enemy_two, enemy_three
 
-# print_speed = slow_print ()
-result = hero_vs_enemy_battle (my_hero, enemy_one)
-print (result)
+# battle = rpg_functions.hero_vs_enemy_battle (my_hero, enemy_one)
 
-result = hero_vs_enemy_battle (my_hero, enemy_two)
-print (result)
 
-result = hero_vs_enemy_battle (my_hero, enemy_three)
-print (result)
+# rpg_functions.equipment_loot (my_hero, enemy_one)
+
+rpg_functions.coin_collection (my_hero, enemy_one)

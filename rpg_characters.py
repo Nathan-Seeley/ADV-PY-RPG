@@ -15,7 +15,7 @@ enemy_one = {
     "name" : "Babear The Young",
     "level" : 1,
     "health" : 100,
-    "equipment" : {"Hard Chair", "Warm Porridge"},
+    "equipment" : {"Hard Chair", "Just right Porridge"},
     "attacks" : (("Light Growl",15), ("Small Paw Strike",65), ("Tiny Tooth Nip", 115)),
     "coins" : {
         "copper" : 12,
@@ -28,7 +28,7 @@ enemy_two = {
     "name" : "Pabear The Large",
     "level" : 2,
     "health" : 115,
-    "equipment" : {"Conforting Bed", "Hot Porridge"},
+    "equipment" : {"Just Right Bed", "Hot Porridge"},
     "attacks" : (("Warding Growl",30), ("Large Paw Strike",80), ("Menacing Teeth Bite",130)),
     "coins" : {
         "copper" : 15,
@@ -41,7 +41,7 @@ enemy_three = {
     "name" : "Mabear The Wise",
     "level" : 3,
     "health" : 130,
-    "equipment" : {"Comforting Chair", "Cold Porridge"},
+    "equipment" : {"Just Right Chair", "Cold Porridge"},
     "attacks" : (("Angry Roar",45), ("Paw Strike of Protection",95), ("Hug of Death",145)),
     "coins" : {
         "copper" : 18,
@@ -49,3 +49,4 @@ enemy_three = {
         "gold" : 9
     }
 }
+my_enemies = [enemy_one, enemy_two, enemy_three]
