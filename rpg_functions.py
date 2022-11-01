@@ -77,5 +77,5 @@ def health_increaser (hero):
     if hero ["health"] > 0:     
         hero["health"] += 15
         print (f"{Fore.LIGHTGREEN_EX}")
-        slow_print (f"{hero['name']} has gained 15 health.")
-        slow_print (f"{hero['name']} now has {hero['health']} health.")
+        slow_print (f"{hero['name']} has gained 15 energy points.")
+        slow_print (f"{hero['name']} now has {hero['health']} energy points.")

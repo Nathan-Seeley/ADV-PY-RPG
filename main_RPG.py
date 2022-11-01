@@ -18,7 +18,7 @@ def run_battle (hero,enemies):
                 print ("Going into a house without permission may not be the best idea?") 
                 break
         if hero ["health"] > 0:
-            print (f"{hero ['name']} can now enjoy all that is JUUUUUST RIGHT!")
+            print (f"All the BEARS are fast asleep so now {hero ['name']} can now enjoy all that is JUUUUUST RIGHT!")
                 
     return run_battle
 battle = run_battle (my_hero, my_enemies)
