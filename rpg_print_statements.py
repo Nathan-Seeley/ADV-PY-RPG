@@ -1,4 +1,4 @@
-welcome_story_one = ("After a long journey through the woods our HERO is lost but then they see a house in a clearing ahead!")
+welcome_story_one = ("After a long journey through the woods our lost HERO sees a house in a clearing ahead!")
 welcome_story_two = ("Hungry and tired, they want somewhere to sit, eat and sleep!")
 welcome_story_three = ("Your HERO steps inside only to be confronted by three beastly BEARS!")
 battle_question_one = ("Does your HERO have what it takes to defeat them? Let's see!")

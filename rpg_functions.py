@@ -20,7 +20,7 @@ def random_battle_generator (hero , enemy):
     while hero ["health"] and enemy ["health"]> 0:
         hero_attack = random.choice (hero ["attacks"])
         print (f"{Fore.GREEN}")
-        slow_print (f"{enemy ['name']} takes {hero_attack [1]} energy drain points from {hero ['name']} while using {hero_attack [0]}!")
+        slow_print (f"{enemy ['name']} loses {hero_attack [1]} energy points because of {hero ['name']}'s {hero_attack [0]} attack!")
         enemy ["health"] -= hero_attack [1]
             
         if enemy ["health"] <= 0:
@@ -33,7 +33,7 @@ def random_battle_generator (hero , enemy):
             
         enemy_attack = random.choice (enemy ["attacks"])
         print (f"{Fore.RED}")
-        slow_print (f"{hero ['name']} takes {enemy_attack [1]} energy points from {enemy ['name']} while using {enemy_attack [0]}!")
+        slow_print (f"{hero ['name']} loses {enemy_attack [1]} energy points because of {enemy ['name']}'s {enemy_attack [0]} attack!")
         hero ["health"] -= enemy_attack [1]
         if hero ["health"] >0:
             print (f"{Fore.LIGHTYELLOW_EX}")

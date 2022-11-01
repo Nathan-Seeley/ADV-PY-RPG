@@ -19,7 +19,7 @@ def run_battle (hero,enemies):
                 break
         if hero ["health"] > 0:
             print (f"All the BEARS are fast asleep so now {hero ['name']} can now enjoy all that is JUUUUUST RIGHT!")
-                
+            break   
     return run_battle
 battle = run_battle (my_hero, my_enemies)
 
