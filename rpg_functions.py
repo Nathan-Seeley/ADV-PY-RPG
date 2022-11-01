@@ -11,9 +11,9 @@ def slow_print (string_to_print):
         time.sleep (0.05)
     print ("")
 
-def story_teller (introduction):
+def story_teller (story):
     print (f"{Fore.CYAN}Welcome to a childrens story adventure.")
-    for line in introduction:
+    for line in story:
         slow_print (line)
     
 def random_battle_generator (hero , enemy):
@@ -68,11 +68,11 @@ def new_attacks_generatror (hero):
         attack_strength = (50, 75, 100, 150)
         random_attack_strength = random.choice (attack_strength)
         print (f"{Fore.LIGHTYELLOW_EX}")
-        user_attack_name = (input (f"{hero['name']} has learned a new attack! Name the attack. "))
+        slow_print (f"{hero['name']} attacks are {hero['attacks']}.")
+        user_attack_name = (input (f"{hero['name']} has learned a new attack! Name the attack: "))
         new_attack_list = [(str(user_attack_name),random_attack_strength)]
         new_attack_tuple = tuple (new_attack_list)
         hero ["attacks"]  = hero ["attacks"] + new_attack_tuple
-        slow_print (f"{hero['name']} attacks are {hero['attacks']}.")
 def health_increaser (hero):
     if hero ["health"] > 0:     
         hero["health"] += 15
