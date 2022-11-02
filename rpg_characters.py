@@ -27,7 +27,7 @@ enemy_one = {
 enemy_two = {
     "name" : "Pabear The Large",
     "level" : 2,
-    "health" : 115,
+    "health" : 85,
     "equipment" : {"Just Right Bed", "Hot Porridge"},
     "attacks" : (("Warding Growl",30), ("Large Paw Strike",80), ("Menacing Teeth Bite",130)),
     "coins" : {
@@ -40,7 +40,7 @@ enemy_two = {
 enemy_three = {
     "name" : "Mabear The Wise",
     "level" : 3,
-    "health" : 130,
+    "health" : 70,
     "equipment" : {"Just Right Chair", "Cold Porridge"},
     "attacks" : (("Angry Roar",45), ("Paw Strike of Protection",95), ("Hug of Death",145)),
     "coins" : {

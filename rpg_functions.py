@@ -19,31 +19,31 @@ def story_teller (story):
 def random_battle_generator (hero , enemy):
     while hero ["health"] and enemy ["health"]> 0:
         hero_attack = random.choice (hero ["attacks"])
-        print (f"{Fore.GREEN}")
-        slow_print (f"{enemy ['name']} loses {hero_attack [1]} energy points because of {hero ['name']}'s {hero_attack [0]} attack!")
+        print (f"{Fore.LIGHTGREEN_EX}")
+        slow_print (f"{enemy ['name']} loses {hero_attack [1]} energy because of {hero ['name']}'s {hero_attack [0]} attack!")
         enemy ["health"] -= hero_attack [1]
-            
-        if enemy ["health"] <= 0:
-            print (f"{Fore.RED}")
+        if enemy ["health"] < 1:
+            print (f"{Fore.CYAN}")
             slow_print (f"{enemy ['name']} has fallen asleep!")
             break
         elif enemy ["health"] >= 1:
-            print (f"{Fore.LIGHTYELLOW_EX}")
-            slow_print (f"{enemy ['name']} has {enemy ['health']} energy points left!")
-            
+            print (f"{Fore.CYAN}")
+            slow_print (f"{enemy ['name']} has {enemy ['health']} energy left!")
         enemy_attack = random.choice (enemy ["attacks"])
         print (f"{Fore.RED}")
-        slow_print (f"{hero ['name']} loses {enemy_attack [1]} energy points because of {enemy ['name']}'s {enemy_attack [0]} attack!")
+        slow_print (f"{hero ['name']} loses {enemy_attack [1]} energy because of {enemy ['name']}'s {enemy_attack [0]} attack!")
         hero ["health"] -= enemy_attack [1]
         if hero ["health"] >0:
-            print (f"{Fore.LIGHTYELLOW_EX}")
+            print (f"{Fore.LIGHTMAGENTA_EX}")
             slow_print (f"{hero ['name']} has {hero ['health']} energy points left!")
-        elif hero ["health"] < 0:
+        elif hero ["health"] < 1:
+            print (f"OH NO!!! {hero ['name']} was chased out of the house.") 
+            print ("Going into a house without permission may not be the best idea?")
             break
 
 def loot_collector (hero, enemy):
     if hero ["health"] > 0:
-        print (f"{Fore.GREEN}")
+        print (f"{Fore.MAGENTA}")
         slow_print (f"{hero ['name']} is equiped with {hero ['equipment']}.")
         slow_print (f"{hero ['name']} has gained {enemy ['equipment']} from {enemy ['name']}!")
         hero ["equipment"] = hero ["equipment"].union (enemy ["equipment"])
@@ -67,7 +67,7 @@ def new_attacks_generatror (hero):
     if hero ["health"] > 0:
         attack_strength = (50, 75, 100, 150)
         random_attack_strength = random.choice (attack_strength)
-        print (f"{Fore.LIGHTYELLOW_EX}")
+        print (f"{Fore.LIGHTMAGENTA_EX}")
         slow_print (f"{hero['name']} attacks are {hero['attacks']}.")
         user_attack_name = (input (f"{hero['name']} has learned a new attack! Name the attack: "))
         new_attack_list = [(str(user_attack_name),random_attack_strength)]
@@ -79,3 +79,4 @@ def health_increaser (hero):
         print (f"{Fore.LIGHTGREEN_EX}")
         slow_print (f"{hero['name']} has gained 15 energy points.")
         slow_print (f"{hero['name']} now has {hero['health']} energy points.")
+        print (f"{Fore.CYAN}")
